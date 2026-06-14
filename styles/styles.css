@@ -20,6 +20,8 @@ h2 {
 }
 p {
     color: #1b3465;
+    text-align: center;
+    align-items: center;
     margin-bottom: 20px;
 }
 
