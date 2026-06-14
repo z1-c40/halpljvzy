@@ -1,0 +1,12 @@
+{
+  "name": "my-website",
+  "version": "1.0.0",
+  "description": "A simple HTML website with clean styling",
+  "main": "index.html",
+  "scripts": {
+    "start": "open index.html"
+  },
+  "keywords": ["website", "html", "css"],
+  "author": "",
+  "license": "MIT"
+}
