@@ -26,7 +26,8 @@ p {
 }
 li {
     color: #d2f3ff;
-    margin-bottom: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 a,
 a:visited,
