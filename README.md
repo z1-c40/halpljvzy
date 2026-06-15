@@ -14,10 +14,10 @@ Claude Code was not used to design the background for the website. I looked up h
 
 ## Patch Notes
 
-v0.0.1\
+v0.0.1
 - Created main framework and customized it
 
-v0.0.2\
+v0.0.2
 - Added 4 main levels
 - Added music
 - Added images to each level
