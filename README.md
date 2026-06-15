@@ -12,6 +12,9 @@ Claude Code has been utilised to assist me in formatting the website since I can
 v0.0.2a [15.6.2026]\
 Claude Code was not used to design the background for the website. I looked up how to make a flowing background on google and followed a tutorial.
 
+v0.0.3 [15.6.2026]\
+N/A
+
 ## Patch Notes
 
 v0.0.1
@@ -19,9 +22,11 @@ v0.0.1
 
 v0.0.2
 - Added 4 main levels
-- Added music
 - Added images to each level
 
+v0.0.3
+- Added Credits page
+- Added Music
 ## License
 
 This project is open source and available under the MIT License.
