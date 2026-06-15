@@ -1,9 +1,25 @@
+html, body {
+  width: 100%;
+  height:100%;
+}
+
 body {
+    background: linear-gradient(-45deg, #1b3465, #0d47a1, #00b4db, #149c83, #1b3465, #0d47a1);
+    background-size: 600% 600%;
+    animation: forwardDiagonal 15s linear infinite;
     font-family: "Aldrich", sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 20px;
-    background-color: #1b3465;
+}
+
+@keyframes forwardDiagonal {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
 }
 
 h1 {
