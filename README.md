@@ -15,7 +15,7 @@ Claude Code was used to setup vercel.json and soundcloud-loop.js in order to red
 ## Patch Notes
 
 v0.0.1
-- Created main framework and customized it
+- Created main website
 
 v0.0.2
 - Added levels 1-4
@@ -25,7 +25,11 @@ v0.0.3
 - Added Credits page
 - Added Music
 - Added 404.html
-- Added level 5-6
+- Added levels 5-6
+
+v0.0.4
+- Added levels 7-9
+
 ## License
 
 This project is open source and available under the MIT License.
