@@ -4,9 +4,9 @@ html, body {
 }
 
 body {
-    background: linear-gradient(-45deg, #1b3465, #0d47a1, #00b4db, #149c83, #1b3465);
+    background: linear-gradient(-45deg, #1b3465, #0d47a1, #00b4db, #149c83, #00b4db, #0d47a1, #1b3465);
     background-size: 400% 400%;
-    animation: forwardDiagonal 15s ease infinite;
+    animation: forwardDiagonal 20s linear infinite alternate;
     font-family: "Aldrich", sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -14,15 +14,44 @@ body {
     background-attachment: fixed; 
 }
 
+body.belomancy-theme {
+    background: linear-gradient(45deg, #ff8a3d, #7a141e, #8a2453, #5e1320, #8a2453, #7a141e, #ff8a3d);
+    background-size: 400% 400%;
+    animation: forwardDiagonal 20s linear infinite alternate;
+    background-attachment: fixed;
+}
+
+@keyframes forwardDiagonal {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+body.belomancy-theme h1,
+body.belomancy-theme h2,
+body.belomancy-theme h3,
+body.belomancy-theme p,
+body.belomancy-theme li,
+body.belomancy-theme .bottom-text {
+    color: #ffe7d6;
+}
+
+body.belomancy-theme a,
+body.belomancy-theme a:visited,
+body.belomancy-theme a:hover,
+body.belomancy-theme a:active {
+    color: #ffd0b0;
+}
+
 @keyframes forwardDiagonal {
     0% {
         background-position: 0% 50%;
     }
-    50% {
-        background-position: 100% 50%;
-    }
     100% {
-        background-position: 0% 50%;
+        background-position: 100% 50%;
     }
 }
 
