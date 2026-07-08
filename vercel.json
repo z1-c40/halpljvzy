@@ -13,10 +13,7 @@
     },
     {
       "src": "/(.*)",
-      "status": 307,
-      "headers": {
-        "Location": "/404.html"
-      }
+      "dest": "/404.html"
     }
   ]
 }
