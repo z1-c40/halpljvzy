@@ -46,7 +46,8 @@ v0.0.6
 v0.0.7
 - Added levels 12-17
 
-
+v0.0.8
+- Added levels 18-20
 
 ## License
 

@@ -12,6 +12,13 @@
       }
     },
     {
+      "src": "/belomancy/guide\\.htm$",
+      "status": 307,
+      "headers": {
+        "Location": "/candlelight/guide.htm"
+      }
+    },
+    {
       "src": "/(.*)",
       "dest": "/404.html"
     }
