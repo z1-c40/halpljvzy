@@ -137,3 +137,7 @@ a:active {
 .semi-transparent {
     opacity: 0.1;
 }
+
+html, body {
+  overscroll-behavior-y: none;
+}
