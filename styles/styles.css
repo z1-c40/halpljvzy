@@ -22,7 +22,7 @@ body.belomancy-theme {
 }
 
 body.candlelight-theme {
-    background: linear-gradient(-45deg, #fff9c4, #ffe082, #ffd54f, #ffc107, #ffd54f, #ffe082, #fff9c4);
+    background: linear-gradient(-45deg, #f2d572, #e6bf4a, #d9ab1f, #c79500, #d9ab1f, #e6bf4a, #f2d572);
     background-size: 400% 400%;
     animation: forwardDiagonal 20s linear infinite alternate;
     margin: 0;
