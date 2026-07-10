@@ -6,7 +6,7 @@ html, body {
 body {
     background: linear-gradient(-45deg, #1b3465, #0d47a1, #00b4db, #149c83, #00b4db, #0d47a1, #1b3465);
     background-size: 400% 400%;
-    animation: forwardDiagonal 20s linear infinite alternate;
+    animation: forwardDiagonal 30s linear infinite alternate;
     font-family: "Aldrich", sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -17,14 +17,14 @@ body {
 body.belomancy-theme {
     background: linear-gradient(45deg, #ff8a3d, #7a141e, #8a2453, #5e1320, #8a2453, #7a141e, #ff8a3d);
     background-size: 400% 400%;
-    animation: forwardDiagonal 20s linear infinite alternate;
+    animation: forwardDiagonal 30s linear infinite alternate;
     background-attachment: fixed;
 }
 
 body.candlelight-theme {
-    background: linear-gradient(-45deg, #a4862b, #94771f, #856917, #755b11, #856917, #94771f, #a4862b);
+    background: linear-gradient(-45deg, #0f1b3d, #162a57, #1f3f75, #faa30c, #1f3f75, #162a57, #0f1b3d);
     background-size: 400% 400%;
-    animation: forwardDiagonal 20s linear infinite alternate;
+    animation: forwardDiagonal 30s linear infinite alternate;
     margin: 0;
     padding: 20px;
     background-attachment: fixed; 
