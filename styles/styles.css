@@ -1,42 +1,84 @@
 html, body {
   width: 100%;
-  height:100%;
+  height: 100%;
+  overscroll-behavior-y: none;
+}
+
+.page {
+  min-height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1 0 auto;
 }
 
 body {
-    background: linear-gradient(-45deg, #1b3465, #0d47a1, #00b4db, #149c83, #00b4db, #0d47a1, #1b3465);
-    background-size: 400% 400%;
-    animation: forwardDiagonal 30s linear infinite alternate;
-    font-family: "Aldrich", sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
-    background-attachment: fixed; 
+  margin: 0;
+  padding: 20px;
+  font-family: "Aldrich", sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(-45deg, #1b3465, #0d47a1, #00b4db, #149c83, #00b4db, #0d47a1, #1b3465);
+  background-size: 400% 400%;
+  background-attachment: fixed; 
+  animation: forwardDiagonal 30s linear infinite alternate;
 }
 
 body.belomancy-theme {
-    background: linear-gradient(45deg, #ff8a3d, #7a141e, #8a2453, #5e1320, #8a2453, #7a141e, #ff8a3d);
-    background-size: 400% 400%;
-    animation: forwardDiagonal 30s linear infinite alternate;
-    background-attachment: fixed;
+  background: linear-gradient(45deg, #ff8a3d, #7a141e, #8a2453, #5e1320, #8a2453, #7a141e, #ff8a3d);
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  animation: forwardDiagonal 30s linear infinite alternate;
 }
 
 body.candlelight-theme {
-    background: linear-gradient(-45deg, #0f1b3d, #162a57, #1f3f75, #faa30c, #1f3f75, #162a57, #0f1b3d);
-    background-size: 400% 400%;
-    animation: forwardDiagonal 30s linear infinite alternate;
-    margin: 0;
-    padding: 20px;
-    background-attachment: fixed; 
+  background: linear-gradient(-45deg, #0f1b3d, #162a57, #1f3f75, #faa30c, #1f3f75, #162a57, #0f1b3d);
+  background-size: 400% 400%;
+  background-attachment: fixed; 
+  animation: forwardDiagonal 30s linear infinite alternate;
 }
 
-@keyframes forwardDiagonal {
-    0% {
-        background-position: 0% 0%;
-    }
-    100% {
-        background-position: 100% 100%;
-    }
+h1, h2, h3, p, li, .bottom-text {
+  color: #d2f3ff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.bottom-text {
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
 }
 
 body.belomancy-theme h1,
@@ -45,99 +87,32 @@ body.belomancy-theme h3,
 body.belomancy-theme p,
 body.belomancy-theme li,
 body.belomancy-theme .bottom-text {
-    color: #ffe7d6;
+  color: #ffe7d6;
 }
 
 body.belomancy-theme a,
 body.belomancy-theme a:visited,
 body.belomancy-theme a:hover,
 body.belomancy-theme a:active {
-    color: #ffd0b0;
+  color: #ffd0b0;
 }
 
-@keyframes forwardDiagonal {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-}
-
-h1 {
-    color: #d2f3ff;
-    text-align: center;
-    align-items: center;
-    font-size: 70px;
-}
-h2 {
-    color: #d2f3ff;
-    text-align: center;
-    align-items: center;
-    font-size: 40px;
-}
-h3 {
-    color: #d2f3ff;
-    text-align: center;
-    align-items: center;
-}
-p {
-    color: #d2f3ff;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-li {
-    color: #d2f3ff;
-    align-items: center;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.music-list {
-    text-align: center;
-    list-style-position: inside;
-    padding-left: 0;
-}
-
+.music-list,
 .changelog-list {
-    text-align: center;
-    list-style-position: inside;
-    padding-left: 0;
-}
-
-a,
-a:visited,
-a:hover,
-a:active {
-    color: inherit;
-}
-
-.page {
-    min-height: calc(100vh - 40px);
-    display: flex;
-    flex-direction: column;
-}
-
-.page-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    flex: 1 0 auto;
-}
-
-.bottom-text {
-    margin-top: auto;
-    text-align: center;
-    color: #d2f3ff;
-    padding: 1rem 0;
+  text-align: center;
+  list-style-position: inside;
+  padding-left: 0;
 }
 
 .semi-transparent {
-    opacity: 0.1;
+  opacity: 0.1;
 }
 
-html, body {
-  overscroll-behavior-y: none;
+@keyframes forwardDiagonal {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
