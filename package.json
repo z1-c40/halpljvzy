@@ -1,7 +1,7 @@
 {
   "name": "esoterica",
-  "version": "0.0.8",
-  "description": "A draft web puzzle",
+  "version": "0.0.9",
+  "description": "A web puzzle",
   "main": "index.html",
   "scripts": {
     "start": "open index.html"

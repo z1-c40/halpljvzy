@@ -49,6 +49,10 @@ v0.0.7
 v0.0.8
 - Added levels 18-20
 
+v0.0.9
+- Several changes to level design
+- Added levels 21-23
+
 ## License
 
 This project is open source and available under the MIT License.
