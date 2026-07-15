@@ -19,6 +19,13 @@
       }
     },
     {
+      "src": "/candlelight/beninging\\.htm$",
+      "status": 307,
+      "headers": {
+        "Location": "/candlelight/beginning.htm"
+      }
+    },
+    {
       "src": "/(.*)",
       "dest": "/404.html"
     }
