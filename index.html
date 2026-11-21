@@ -11,78 +11,81 @@
     <link rel="icon" type="image/svg+xml" href="/assets/general/icon.svg">
 </head>
 <body>
-<iframe
-    width="100%"
-    height="0"
-    scrolling="no"
-    frameborder="no"
-    allow="autoplay"
-    title="SoundCloud music player"
-    src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/fod-steve/plz-hold&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false&loop=true"
-    volume="0.3"
-></iframe>
-<h1>Esoterica</h1>
-<h3>Welcome to Esoterica! This is a web puzzle created by
-    <a href="https://hackclub.enterprise.slack.com/team/U07DL91MFQT" target="_blank" rel="noopener noreferrer"> @zook</a>.
-</h3>
-<h3>Heavily inspired by 
-    <a href="https://polychromasia.surge.sh/" target="_blank" rel="noopener noreferrer"> Polychromasia</a>.
-</h3>
-<h3>Also submitted to
-<a href="https://prologue.hackclub.com/" target="_blank" rel="noopener noreferrer"> <i>#prologue</i></a>.
-</h3>
-<div class="button-grid">
-<a class="button-card" href="/asynartetic/inception.htm">
-        <img class="button-photo" src="/assets/general/main1.png" data-hover-src="/assets/general/main2.png" alt="main12">
-</a>
-<a class="button-card" href="https://reverence.vercel.app/">
-        <img class="button-photo" src="/assets/general/main3.png" data-hover-src="/assets/general/main4.png" alt="main34">
-</a>
-<a class="button-card" href="/credits.html">
-        <img class="button-photo" src="/assets/general/main5.png" data-hover-src="/assets/general/main6.png" alt="main56">
-</a>
-<a class="button-card" href="/halloffame.html">
-        <img class="button-photo" src="/assets/general/main7.png" data-hover-src="/assets/general/main8.png" alt="main78">
-</a>
-<a class="button-card" href="https://hackclub.enterprise.slack.com/archives/C09N797U5L1">
-        <img class="button-photo" src="/assets/general/main9.png" data-hover-src="/assets/general/main10.png" alt="main910">
-</a>
-<a class="button-card" href="https://zookmakes.vercel.app/">
-        <img class="button-photo" src="/assets/general/main11.png" data-hover-src="/assets/general/main12.png" alt="main1112">
-</a>
-</div>
-<script src="/scripts/soundcloud-loop.js"></script>
-<script>
-    document.querySelectorAll('.button-card').forEach((card) => {
-        const image = card.querySelector('.button-photo');
-        if (!image) {
-            return;
-        }
+    <iframe
+        width="100%"
+        height="0"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        title="SoundCloud music player"
+        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/fod-steve/plz-hold&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false&loop=true"
+        volume="0.3"
+    ></iframe>
+    <h1>Esoterica</h1>
+    <h3>Welcome to Esoterica! This is a web puzzle created by
+        <a href="https://hackclub.enterprise.slack.com/team/U07DL91MFQT" target="_blank" rel="noopener noreferrer"> @zook</a>.
+    </h3>
+    <h3>Heavily inspired by 
+        <a href="https://polychromasia.surge.sh/" target="_blank" rel="noopener noreferrer"> Polychromasia</a>.
+    </h3>
+    <h3>Also submitted to
+    <a href="https://prologue.hackclub.com/" target="_blank" rel="noopener noreferrer"> <i>#prologue </i></a>
+    </h3>
+    <h3>and
+    <a href="https://taiyaki.hackclub.com/" target="_blank" rel="noopener noreferrer"> <i>#taiyaki</i></a>
+    </h3>
+    <div class="button-grid">
+    <a class="button-card" href="/asynartetic/inception.htm">
+            <img class="button-photo" src="/assets/general/main1.png" data-hover-src="/assets/general/main2.png" alt="main12">
+    </a>
+    <a class="button-card" href="https://reverence.vercel.app/">
+            <img class="button-photo" src="/assets/general/main3.png" data-hover-src="/assets/general/main4.png" alt="main34">
+    </a>
+    <a class="button-card" href="/credits.html">
+            <img class="button-photo" src="/assets/general/main5.png" data-hover-src="/assets/general/main6.png" alt="main56">
+    </a>
+    <a class="button-card" href="/halloffame.html">
+            <img class="button-photo" src="/assets/general/main7.png" data-hover-src="/assets/general/main8.png" alt="main78">
+    </a>
+    <a class="button-card" href="https://hackclub.enterprise.slack.com/archives/C09N797U5L1">
+            <img class="button-photo" src="/assets/general/main9.png" data-hover-src="/assets/general/main10.png" alt="main910">
+    </a>
+    <a class="button-card" href="https://zookmakes.vercel.app/">
+            <img class="button-photo" src="/assets/general/main11.png" data-hover-src="/assets/general/main12.png" alt="main1112">
+    </a>
+    </div>
+    <script src="/scripts/soundcloud-loop.js"></script>
+    <script>
+        document.querySelectorAll('.button-card').forEach((card) => {
+            const image = card.querySelector('.button-photo');
+            if (!image) {
+                return;
+            }
 
-        const originalSrc = image.getAttribute('src');
-        const hoverSrc = image.dataset.hoverSrc;
+            const originalSrc = image.getAttribute('src');
+            const hoverSrc = image.dataset.hoverSrc;
 
-        if (!originalSrc || !hoverSrc) {
-            return;
-        }
+            if (!originalSrc || !hoverSrc) {
+                return;
+            }
 
-        const preload = new Image();
-        preload.src = hoverSrc;
+            const preload = new Image();
+            preload.src = hoverSrc;
 
-        const showHover = () => {
-            image.src = hoverSrc;
-        };
+            const showHover = () => {
+                image.src = hoverSrc;
+            };
 
-        const showOriginal = () => {
-            image.src = originalSrc;
-        };
+            const showOriginal = () => {
+                image.src = originalSrc;
+            };
 
-        card.addEventListener('mouseenter', showHover);
-        card.addEventListener('mouseleave', showOriginal);
-        card.addEventListener('focus', showHover);
-        card.addEventListener('blur', showOriginal);
-    });
-</script>
-<p class="bottom-text">Made with 💖 by @zook, June 2026</p>
+            card.addEventListener('mouseenter', showHover);
+            card.addEventListener('mouseleave', showOriginal);
+            card.addEventListener('focus', showHover);
+            card.addEventListener('blur', showOriginal);
+        });
+    </script>
+    <p class="bottom-text">Made with 💖 by @zook, June 2026</p>
 </body>
 </html>
